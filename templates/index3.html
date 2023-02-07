@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href='/staticFiles/main.css' />
+    <style>
+        p.dotted {
+            border-style: dotted;
+        }
+        
+        p.dashed {
+            border-style: dashed;
+        }
+        
+        p.solid {
+            border-style: solid;
+        }
+        
+        h2.double {
+            border-style: double;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        
+        p.groove {
+            border-style: groove;
+        }
+        
+        p.ridge {
+            border-style: ridge;
+        }
+        
+        p.inset {
+            border-style: inset;
+        }
+        
+        p.outset {
+            border-style: outset;
+        }
+        
+        p.none {
+            border-style: none;
+        }
+        
+        p.hidden {
+            border-style: hidden;
+        }
+        
+        p.mix {
+            border-style: dotted dashed solid double;
+        }
+        
+        div {
+            background-color: lightgrey;
+            width: 400px;
+            border: 15px solid green;
+            padding: 30px;
+            margin: 10px;
+            margin-left: 460px;
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(98, 162, 162);">
+    <h1 style="color: rgb(4, 46, 89); text-align: center; "><b>Machine Learning Evaluator for Privacy-preserving</b></h1>
+    <h2 style="font-size:1.5vw; text-align: center;" class="double">Display the Regression Model Result in the Flask</h2>
+    <br>
+    <div>
+        <h2 style="text-align: center;">The Performance Analysis of the Regression Model is Below</h2>
+        <h2 style="text-align: center;">--------------------------------</h2>
+        <p style="text-align: center;"> {{r_squared_value}} </p>
+        <p style="text-align: center; text-indent: -16px"> {{adj_r_squared_value}} </p>
+        <p style="text-align: center; text-indent: -16px"> {{barier_score}} </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href='/staticFiles/main.css' />
+</head>
+
+<body style="background-color:rgb(205, 209, 209);">
+    <h1 style="color: dodgerblue; text-align: center;">Machine Learning Evaluator for Privacy-preserving</h1>
+    <p style="text-align: center; text-align: center; font-weight: bold"><span>👇</span> Choose & Upload the CSV File Below <span>👇</span></p>
+    <br>
+    <form style="text-align: center;" method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" id="myFile" name="uploaded-file" accept=".csv">
+        <input type="submit" value="Upload file">
+    </form>
+    <br>
+    <p style="color:blue; text-align: center;">Note: Choose Csv File to Upload</p>
+    <form style="text-align: center;" action="/show_result_classification" target="_blank">
+        <input type="submit" value="Classification: Click Here to Test the Classification Model & to Get the Result" />
+    </form>
+    <br>
+    <form style="text-align: center;" action="/show_result_regression" target="_blank">
+        <input type="submit" value="Regression: Click Here to Test the Regression Model & to Get the Result" />
+    </form>
+    <br>
+    <form style="text-align: center;" action="/show_result_clustering" target="_blank">
+        <input type="submit" value="Clustering: Click Here to Test the Clustering Model & to Get the Result" />
+    </form>
+</body>
+
+</html>
